@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreAttributeRequest;
-use App\Http\Requests\UpdateAttributeRequest;
-use App\Models\Attribute\Attribute;
+use App\Models\Role_User;
+use App\Http\Requests\StoreRole_UserRequest;
+use App\Http\Requests\UpdateRole_UserRequest;
 
-class AttributeController extends Controller
+class RoleUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class AttributeController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreAttributeRequest $request)
+    public function store(StoreRole_UserRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class AttributeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Attribute $attribute)
+    public function show(Role_User $role_User)
     {
         //
     }
@@ -43,7 +43,7 @@ class AttributeController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Attribute $attribute)
+    public function edit(Role_User $role_User)
     {
         //
     }
@@ -51,7 +51,7 @@ class AttributeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateAttributeRequest $request, Attribute $attribute)
+    public function update(UpdateRole_UserRequest $request, Role_User $role_User)
     {
         //
     }
@@ -59,7 +59,7 @@ class AttributeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Attribute $attribute)
+    public function destroy(Role_User $role_User)
     {
         //
     }

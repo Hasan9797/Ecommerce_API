@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Models\Attribute;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Attribute extends Model
+class Role_User extends Model
 {
     use HasFactory;
 }

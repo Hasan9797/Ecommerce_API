@@ -2,10 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\Attribute\Attribute;
-use App\Models\User\User;
+use App\Models\Role_User;
+use App\Models\User;
+use Illuminate\Auth\Access\Response;
 
-class AttributePolicy
+class RoleUserPolicy
 {
     /**
      * Determine whether the user can view any models.
@@ -18,7 +19,7 @@ class AttributePolicy
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, Attribute $attribute): bool
+    public function view(User $user, Role_User $roleUser): bool
     {
         //
     }
@@ -34,7 +35,7 @@ class AttributePolicy
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, Attribute $attribute): bool
+    public function update(User $user, Role_User $roleUser): bool
     {
         //
     }
@@ -42,7 +43,7 @@ class AttributePolicy
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, Attribute $attribute): bool
+    public function delete(User $user, Role_User $roleUser): bool
     {
         //
     }
@@ -50,7 +51,7 @@ class AttributePolicy
     /**
      * Determine whether the user can restore the model.
      */
-    public function restore(User $user, Attribute $attribute): bool
+    public function restore(User $user, Role_User $roleUser): bool
     {
         //
     }
@@ -58,7 +59,7 @@ class AttributePolicy
     /**
      * Determine whether the user can permanently delete the model.
      */
-    public function forceDelete(User $user, Attribute $attribute): bool
+    public function forceDelete(User $user, Role_User $roleUser): bool
     {
         //
     }

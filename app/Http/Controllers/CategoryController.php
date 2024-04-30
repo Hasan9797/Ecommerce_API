@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Category\StoreCategoryRequest;
-use App\Http\Requests\Category\UpdateCategoryRequest;
-use App\Models\Category\Category;
+use App\Models\Category;
+use App\Http\Requests\StoreCategoryRequest;
+use App\Http\Requests\UpdateCategoryRequest;
 
 class CategoryController extends Controller
 {
@@ -13,7 +13,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return Category::all();
+        //
     }
 
     /**
@@ -29,7 +29,7 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        return $category;
+        //
     }
 
     /**

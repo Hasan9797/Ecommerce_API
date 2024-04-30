@@ -2,8 +2,9 @@
 
 namespace App\Policies;
 
-use App\Models\Category\Category;
-use App\Models\User\User;
+use App\Models\Category;
+use App\Models\User;
+use Illuminate\Auth\Access\Response;
 
 class CategoryPolicy
 {

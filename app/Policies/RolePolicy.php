@@ -2,8 +2,9 @@
 
 namespace App\Policies;
 
-use App\Models\Role\Role;
-use App\Models\User\User;
+use App\Models\Role;
+use App\Models\User;
+use Illuminate\Auth\Access\Response;
 
 class RolePolicy
 {

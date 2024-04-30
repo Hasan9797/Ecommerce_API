@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Category\Category;
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 
 class CategorySeeder extends Seeder
@@ -12,44 +12,6 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        Category::create(
-            [
-                'name' => [
-                    'uz' => 'Kreslo',
-                    'ru' => 'Кресло',
-                    'en' => 'Arimchair',
-                ],
-            ]
-        );
-
-        Category::create(
-            [
-                'name' => [
-                    'uz' => 'Stol',
-                    'ru' => 'Стол',
-                    'en' => 'Table',
-                ],
-            ]
-        );
-
-        Category::create(
-            [
-                'name' => [
-                    'uz' => 'Karavat',
-                    'ru' => 'кровать',
-                    'en' => 'Bed',
-                ],
-            ]
-        );
-
-        Category::create(
-            [
-                'name' => [
-                    'uz' => 'Sto`l',
-                    'ru' => 'Стул',
-                    'en' => 'Chair',
-                ],
-            ]
-        );
+        Category::factory()->count(5)->create();
     }
 }

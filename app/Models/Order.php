@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Models\Value;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Value extends Model
+class Order extends Model
 {
     use HasFactory;
 }

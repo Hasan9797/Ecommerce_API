@@ -1,19 +1,16 @@
 <?php
 
-namespace App\Models\Category;
+namespace App\Models;
 
-use App\Models\Product\Product;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Spatie\Translatable\HasTranslations;
 
 class Category extends Model
 {
-    use HasFactory, HasTranslations;
+    use HasFactory;
 
     protected $fillable = ['name', 'icon', 'order'];
-    public array $translatable = ['name'];
 
     public function products(): HasMany
     {
