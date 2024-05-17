@@ -17,9 +17,15 @@ class ProductFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->name,
+            'name' => [
+                'en' => fake()->name(),
+                'uz' => fake()->name,
+            ],
             'price' => rand(1000, 1000000),
-            'description' => fake()->text(),
+            'description' => [
+                'en' => fake()->text(),
+                'uz' => 'Mebillar Sizga yoqadigan chotke laridan Pushaymon bo`lmaysiz',
+            ],
             'category_id' => rand(1, 5),
         ];
     }
